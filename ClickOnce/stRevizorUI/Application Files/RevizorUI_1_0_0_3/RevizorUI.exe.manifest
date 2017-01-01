@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly manifestVersion="1.0" xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1">
+  <asmv1:assemblyIdentity version="1.0.0.3" name="RevizorUI.exe" publicKeyToken="bc6924c9e31c29c5" language="ru-RU" processorArchitecture="x86" type="win32" />
+  <description asmv2:iconFile="fw.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="RevizorUI" version="1.0.6308.40662" language="neutral" processorArchitecture="x86" />
+    <commandLine file="RevizorUI.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet version="1" class="System.Security.NamedPermissionSet" Name="LocalIntranet" Description="Default rights given to applications on the local intranet" Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!-- Параметры манифеста UAC
+          При необходимости изменить уровень управления учетными записями Windows замените 
+          узел requestedExecutionLevel одним из следующих значений.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+            Задание узла requestedExecutionLevel отключит виртуализацию файла и реестра.
+            Если виртуализацию файла и реестра нужно использовать для обратной 
+            совместимости, удалите узел requestedExecutionLevel.
+        -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="RevizorUI.exe" size="68096">
+      <assemblyIdentity name="RevizorUI" version="1.0.6308.40662" language="neutral" processorArchitecture="x86" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>+F35OzdufLo6mz0FeVYTh1Bzxq0=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="stCore.dll" size="211456">
+      <assemblyIdentity name="stCore" version="1.0.1.407" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>l7pFf6iJ6Zstul+bzdSvUITUTus=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ru\stCore.resources.dll" size="5120">
+      <assemblyIdentity name="stCore.resources" version="1.0.1.407" language="ru" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>6FRXaf1VdtYbkWdB0+91EPBxZhw=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="stCoreUI.dll" size="67072">
+      <assemblyIdentity name="stCoreUI" version="1.0.1.407" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>ytElKsvK30cbn1McgPg06OKcVBg=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="stRevizor.dll" size="23552">
+      <assemblyIdentity name="stRevizor" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>9Xrn+/OEgL6MCK4qnQ+p5+ACik8=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="fw.ico" size="1078">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>Lw83E38fgkewQSYnVkzUJ7mIhKw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="RevizorUI.exe.config" size="2662">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>ZkvZcnc4jinOfNgsG8NkpbGdyro=</dsig:DigestValue>
+    </hash>
+  </file>
+  <fileAssociation extension=".fw" description="Список IP/Url блокировок РОСКОМНАДЗОРА" progid="RevizorUI.Client" defaultIcon="fw.ico" xmlns="urn:schemas-microsoft-com:clickonce.v1" />
+  <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">
+    <application>
+      <!-- Список всех версий Windows, с которыми это приложение предназначено работать. Windows автоматически выберет наиболее совместимую среду.-->
+      <!-- Если приложение предназначено для работы с Windows 7, раскомментируйте следующий узел supportedOS-->
+      <!--<supportedOS Id="{35138b9a-5d96-4fbd-8e2d-a2440225f93a}"/>-->
+    </application>
+  </compatibility>
+<publisherIdentity name="CN=HOME\Dom" issuerKeyHash="331253b3024023d8f63a363a678bc17ec67ff4e9" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>bDr+5zBueuFvMu4ibaZofahx6TA=</DigestValue></Reference></SignedInfo><SignatureValue>eQVIYsRD20aR6Ouaf2SQJTNKfuORBCcqo8eKMB/8M0SjtTbv6ts+/FchMqnl1WvjNBd7Kl7OAwfNqok3h5dRPFqhonyCp5NtA7n2T0LSvCuaZHZiQFKEK9As/E9awM2Qt2emjIOW9Yvp+Jkj4u6nkF5+vcXkZ0LeuVRS/X2oTEU=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>qTjmclqUv4fWxFXfBbA4I4x/Z8CAYVNCT/acMetSXjnfC3JoNOAqTw5X7kPTTBdiuoC2NbXnUuXcIfLCukrIVlMhjYG1uRMcWa2gCoKnKl7su7/y0PaX4+i6CPeL7y0baCzdCTW3Y2mJiZ9yv6LX1PfIqs4PTNTNFJtdL1XVvFM=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="30e971a87d68a66d22ee326fe17a6e30e7fe3a6c" Description="" Url=""><as:assemblyIdentity version="1.0.0.3" name="RevizorUI.exe" publicKeyToken="bc6924c9e31c29c5" language="ru-RU" processorArchitecture="x86" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=HOME\Dom</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>cuxts6Em2Tk3CiUeqxg4lOxQu2s=</DigestValue></Reference></SignedInfo><SignatureValue>ThBMiZQxC/bVSSdzWTwZ66SEA15m/akQf9d3Lpo/mu0UctJSHCgnf9lYiTzKdWSPluOL1nO6Oz6+QZ+scN2pD/rMB4C7qhxhJ1Mf0SNOk9Sbq+W7b1HzYbo56P3czbrYHcN6wppq93uICNLLpjqj7CqReY4ACCPJnagUV0V4S5U=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>qTjmclqUv4fWxFXfBbA4I4x/Z8CAYVNCT/acMetSXjnfC3JoNOAqTw5X7kPTTBdiuoC2NbXnUuXcIfLCukrIVlMhjYG1uRMcWa2gCoKnKl7su7/y0PaX4+i6CPeL7y0baCzdCTW3Y2mJiZ9yv6LX1PfIqs4PTNTNFJtdL1XVvFM=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIBsTCCAR6gAwIBAgIQUxcdzxyZGo9A4mPoi9lZLDAJBgUrDgMCHQUAMBsxGTAXBgNVBAMeEABIAE8ATQBFAFwARABvAG0wHhcNMTcwNDA4MTk0ODI0WhcNMTgwNDA5MDE0ODI0WjAbMRkwFwYDVQQDHhAASABPAE0ARQBcAEQAbwBtMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCpOOZyWpS/h9bEVd8FsDgjjH9nwIBhU0JP9pwx61JeOd8Lcmg04CpPDlfuQ9NMF2K6gLY1tedS5dwh8sK6SshWUyGNgbW5ExxZraAKgqcqXuy7v/LQ9pfj6LoI94vvLRtoLN0JNbdjaYmJn3K/otfU98iqzg9M1M0Um10vVdW8UwIDAQABMAkGBSsOAwIdBQADgYEAnGi9zuce52z1wYN1wj1SALu680Nbpb6Kbrf+emL1tJ642NoNxkPqs6Zo05Frd8LInPGS+MRZWQ6lMZXpDNCT08fqUN4c4Lylok09eIBDfJxbZe7qVGI4Gl5r8uE6JPAh7aQ/aTq7HnliQ+n5vMWtT6i3JN1bGzYZ3CY0+gqmi/0=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
